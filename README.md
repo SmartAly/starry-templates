@@ -1,193 +1,139 @@
-# Starry — Everyone's AI Design Companion
+**English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Polski](README.pl.md) · [Русский](README.ru.md) · [Português (Brasil)](README.pt-BR.md) · [हिन्दी](README.hi.md)
 
-> **Starry** is everyone’s AI design companion — an AI-native design tool that turns natural-language prompts into production-ready frontend code (React / JSX and HTML). It is built around a simple idea: everyone deserves an AI design companion — interfaces are described in words, generated as real, editable UI, and shipped without leaving the editor.
+# Starry — Your AI design partner.
 
-[![Website](https://img.shields.io/badge/site-starry.design-0a84ff)](https://starry.design)
-[![Global](https://img.shields.io/badge/global-global.starry.design-0a84ff)](https://global.starry.design)
-[![Languages](https://img.shields.io/badge/languages-13%20locales-46c37c)](https://starry.design)
-[![Built with](https://img.shields.io/badge/built%20with-Vite%20%7C%20Tailwind%20%7C%20TypeScript-646cff)](https://vitejs.dev)
-[![GitHub stars](https://img.shields.io/github/stars/SmartAly/starry-templates?style=social)](https://github.com/SmartAly/starry-templates)
-[![Last commit](https://img.shields.io/github/last-commit/SmartAly/starry-templates)](https://github.com/SmartAly/starry-templates)
+<p align="center"><img src="assets/hero.png" alt="Starry — Design is code." width="640"></p>
 
-**简体中文**：Starry 是每个人的 AI 设计伙伴，一款 AI 原生的设计工具，用自然语言描述即可生成可直接上线的前端代码（React/JSX 与 HTML）。
+<p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — an AI-generated bold personal landing page" width="100%"></p>
 
-> This is the **official public resources repository** for Starry. It contains starter prompts, design-system specs, and examples you can use with Starry — **no application source code** (the app itself stays private).
+> The design tool built for AI collaboration. Local-first, powered by ACP & MCP — turning natural language into precise UI specs and production code.
 
----
-
-## Table of Contents
-
-- [What is Starry?](#what-is-starry)
-- [Key features](#key-features)
-- [How it works](#how-it-works)
-- [Starry vs. other tools](#starry-vs-other-tools)
-- [Supported languages](#supported-languages)
-- [Technology stack](#technology-stack)
-- [Websites](#websites)
-- [What's in this repo](#whats-in-this-repo)
-- [Frequently asked questions](#frequently-asked-questions)
-- [Project status](#project-status)
+[![Website](assets/badges/website.svg)](https://starry.design)
+[![Try free in browser](assets/badges/trial.svg)](https://trial.starry.design)
+[![Global](assets/badges/global.svg)](https://global.starry.design)
+[![MCP](assets/badges/mcp.svg)](https://starry.design)
+[![Export](assets/badges/export.svg)](https://starry.design/design-to-code.html)
+[![Languages](assets/badges/langs.svg)](https://starry.design)
+[![License](assets/badges/license.svg)](LICENSE)
 
 ---
 
-## What is Starry?
+## Download Starry
 
-Starry is an **AI-native design and design-to-code platform** — built as *everyone’s AI design companion*. Instead of drawing pixels on a canvas, users describe an interface in plain language; Starry generates a real, editable user interface as **React (JSX)** and **HTML** that can be shipped to production.
+- [Download for macOS](https://starry.design/download.html) — macOS
+- [Try it in your browser](https://trial.starry.design)
+- Website: [starry.design](https://starry.design) · Global site: [global.starry.design](https://global.starry.design)
 
-Key characteristics:
+## Redefine your AI design workflow
 
-- **Prompt-driven.** Interfaces begin as sentences, not artboards.
-- **Code you own.** Output is standard React/JSX and HTML — no proprietary runtime lock-in.
-- **Editor-native via MCP.** Starry connects to code editors through the **Model Context Protocol (MCP)**, so generated components land directly in your project.
-- **Figma-compatible.** Designs can be imported from Figma and kept in sync.
-- **Local-first.** The experience runs close to the user; design state is treated as computable, version-controllable content.
-
-Starry is positioned against traditional UI design tools (Figma, Sketch), AI design-to-code tools (Google Stitch), and AI coding environments (Cursor, Claude, VS Code, OpenAI Codex) — see [comparison](#starry-vs-other-tools).
-
----
-
-## Key features
+Starry redefines the workflow by making the canvas intelligent, verifiable, and seamlessly connected to your codebase.
 
 | Feature | Description |
-| --- | --- |
-| **AI-Driven Canvas (ACP)** | A canvas driven by the Agent Client Protocol (ACP) — generate and iterate UI through conversation rather than manual drawing. |
-| **Export React (JSX) & HTML** | One prompt yields shippable components in standard React/JSX and HTML. |
-| **MCP for your editor** | A Model Context Protocol server bridges Starry and editors (e.g. Cursor, VS Code, Claude), inserting generated code into your codebase. |
-| **Figma import & sync** | Import existing Figma designs and continue working on them as code. |
-| **One-prompt components** | Describe a screen or component once and receive an editable, production-ready result. |
-| **Multilingual** | The product and marketing site ship in 13 locales (see [Supported languages](#supported-languages)). |
+|---|---|
+| **AI-Driven Canvas** | Powered by the Agent Client Protocol (ACP). Chat directly with the canvas. AI natively reads, writes, and generates auto-layout design systems from natural language. |
+| **MCP Server** | Connects seamlessly to AI coding tools like Cursor and Claude via the Model Context Protocol. Generate accurate UI code instantly without leaving your editor. |
+| **CLI for CI/CD** | Design files are code. Use the CLI to batch-export assets, detect typography violations, and diff design changes automatically during code review. |
+| **Full data parity with Figma** | Starry stays in perfect sync with Figma. Copy from one canvas, paste into the other — frames, text, components, and styles land with full fidelity. No lock-in, no black box. |
 
----
+## Starry turns a sentence into an interface
 
-## How it works
+No code, no blank canvas — describe the interface you want, and Starry's AI generates it for you.
 
-Starry reduces the path from idea to interface to three steps:
+| Scenario | Why it fits |
+|---|---|
+| SaaS / Web App UI (settings, CRUD, forms) | Every software team builds these — auto-layout plus direct React (JSX) export keeps the loop shortest. |
+| Marketing landing page / website | A must-have for every product and startup — one sentence in, HTML/React out. |
+| Data dashboard / admin panel | The largest category in B2B — tables, cards and charts are all auto-layout strengths. |
+| Mobile app UI (login, e-commerce, onboarding) | Huge demand — positioned as design + prototype, with HTML export for handoff. |
+| Design system / component library | 'Generate a design system from natural language' — the most differentiated play. |
+| Rapid prototype / MVP validation | Prompt → interface → code: the fastest path for indie devs and PMs to validate ideas. |
 
-1. **Describe it.** Write what you want in natural language (e.g. “a pricing page with three tiers”).
-2. **Generate it.** Starry produces a real, editable UI on its AI-driven canvas.
-3. **Ship it.** Export React/JSX or HTML, or push the result into your editor via MCP.
+## Designs Starry generates
 
-The loop is intentionally short: words → UI → code → product.
+From a single prompt to production-ready screens. Every output keeps pixel-perfect parity with your codebase.
 
----
+| ![](assets/editor-landing.jpg) | ![](assets/editor-mobile.jpg) |
+|---|---|
+| *Marketing landing* | *Mobile screen* |
 
-## Starry vs. other tools
+## How Starry compares
 
-| Tool | Category | Primary output | Prompt-driven | Notes |
-| --- | --- | --- | --- | --- |
-| **Starry** | AI design + design-to-code | React/JSX, HTML | Yes | Generates editable, shippable code; MCP + Figma import. |
-| **Figma** | Collaborative UI design canvas | Design files / specs | No | Industry-standard design tool; dev-mode offers specs, not full code generation. |
-| **Sketch** | Vector UI design tool | Design files | No | macOS-native design tool; no native code generation. |
-| **Google Stitch** | AI design-to-code | UI designs / code | Yes | Google’s prompt-to-UI tool; Figma competitor. |
-| **Cursor** | AI code editor | Source code | Yes (code) | Edits code in a project; not a design canvas. |
-| **Claude / OpenAI** | Large language models | Text / code | Yes (code) | Can generate code via prompt but are not design surfaces. |
-| **VS Code** | Code editor | Source code | No | General-purpose editor; AI features are assistive. |
+| | Starry | Figma | Stitch | Sketch |
+|---|---|---|---|---|
+| AI generation | 1 sentence → UI | Manual + Figma AI | Text to UI | Manual + Sketch AI |
+| Handoff | 0 rework · React (JSX) and HTML | Specs only, no components | Code snippets | Sketch / PDF |
+| Migration | Native .fig import | — (it is Figma) | No native import | Imports Figma |
+| Ease of use | 0 learning curve | Learn the canvas | 0 (text) | Learn Sketch |
+| AI integration | MCP → editor · ACP → agents | None | None | None |
+| Collaboration | Real-time (WebRTC) | Real-time | Real-time | Real-time |
+| Pricing | Free | $12+/editor | Free | $10/editor |
 
-Starry’s differentiator is the combination of a **prompt-driven design surface** and **first-class code output** in one flow.
-
----
-
-## Supported languages
-
-The site and product UI are localized into **13 languages**:
-
-`en` · `zh-CN` · `zh-TW` · `ja` · `ko` · `de` · `es` · `fr` · `it` · `pl` · `ru` · `pt-BR` · `hi`
-
-English (`en`) is the default and serves as the fallback for long-tail locales.
-
----
-
-## Technology stack
-
-Starry’s marketing site and web experience are built as a modern static frontend:
-
-- **Build tool:** Vite 7
-- **Styling:** Tailwind CSS v4 (with `@tailwindcss/vite`)
-- **Language:** TypeScript 5
-- **Animation:** GSAP 3, Lenis (smooth scroll), Three.js (3D / WebGL)
-- **Fonts:** Inter, Space Grotesk, JetBrains Mono (via `@fontsource`)
-- **Output:** Static HTML/CSS/JS, deployable to any static host
-
-The site is internationalized with a lightweight `t()` lookup that falls back to English, so untranslated strings never break the UI.
-
----
-
-## Websites
-
-| Site | Audience | URL |
-| --- | --- | --- |
-| Domestic (China) | `starry.design` | https://starry.design |
-| Global | `global.starry.design` | https://global.starry.design |
-
-Related pages:
-
-- **Design-to-code:** `/design-to-code.html`
-- **AI design tool:** `/ai-design-tool.html`
-- **Comparison:** `/compare.html`
-- **Blog:** `/blog/`
-
----
-
-## What's in this repo
-
-A small, public collection of starter prompts, design-system specs, and examples you can drop into Starry to go from idea to editable UI fast.
-
-```
-starry-templates/
-├── README.md
-├── LICENSE
-├── design-systems/
-│   └── base-ui.md        # a sample Markdown design-system spec
-└── prompts/
-    └── landing-page.md   # a copy-paste prompt to generate a landing page
-```
-
-**How to use these resources**
-
-1. Open [Starry](https://starry.design) (desktop app or web).
-2. For a **design system**: paste the contents of `design-systems/base-ui.md` into Starry’s design-system field so every generation follows your tokens.
-3. For a **screen**: copy a prompt from `prompts/` into the canvas input.
-4. Starry builds editable, auto-layout layers — then export to React (JSX) or HTML.
-
-> This repo is **public and safe to share**. It contains only Markdown specs and prompt files — no Starry application source code (the app itself stays private).
-
----
+> Accuracy checked Aug 2026. Feature availability may change — verify on each vendor's site.
 
 ## Frequently asked questions
 
-**What is Starry?**
-Everyone’s AI design companion — an AI-native design tool that generates production-ready frontend code (React/JSX and HTML) from natural-language prompts.
+**Can Starry use AI to generate an interface?**
 
-**Is Starry a replacement for Figma?**
-No. Starry is prompt-driven and outputs code; Figma is a collaborative design canvas. Starry can import from Figma and is complementary to design workflows.
+Yes. Describe what you want in plain language and Starry's AI generates the interface - layout, components, and auto-layout - then exports production-ready code (React (JSX) and HTML). It's a real, editable, runnable UI, not a static mockup.
 
-**What code can Starry export?**
-Standard React (JSX) and HTML.
+**Can I drop the exported code straight into my project?**
 
-**Does Starry work with my editor?**
-Yes, via an MCP (Model Context Protocol) server that connects Starry to editors such as Cursor, VS Code, and Claude.
+Yes. Starry exports clean, production-ready code (React (JSX) and HTML) with layout parity to the canvas. The code is yours - drop it into your project, no lock-in.
 
-**Which languages does Starry support?**
-13 locales: English, Simplified Chinese, Traditional Chinese, Japanese, Korean, German, Spanish, French, Italian, Polish, Russian, Portuguese (Brazil), and Hindi.
+**Can I bring in my existing Figma designs?**
 
-**Is Starry free?**
-See the pricing and waitlist on the official site (https://starry.design).
+Yes. Starry imports native .fig files - vectors, text, and styles transfer faithfully, and you can keep refining in either tool.
 
-**Where is the Starry source code?**
-Starry’s application source code is private and not published here. This repository is the public resources & templates hub.
+**Can I use Starry from my own editor?**
+
+Yes. Starry runs an MCP server so AI coding tools like Cursor, Claude Code, and Codex can read and write your canvas - generate UI code from your editor without switching context.
+
+**Is my design data safe?**
+
+Yes. Starry is local-first: files stay on your machine by default and work with Git. Cloud collaboration is optional and end-to-end encrypted.
+
+**Where do I get it?**
+
+Download the macOS app from starry.design, or open the browser trial at trial.starry.design — no install and no signup.
+
+## What's in this repo
+
+Starter prompts, design-system specs and examples you can drop into Starry. No application source code — the app itself stays private.
+
+```
+starry-templates/
+├── README.md                 # this file (+ 12 localized versions)
+├── assets/                   # hero image & real editor screenshots
+├── design-systems/
+│   └── base-ui.md            # sample Markdown design-system spec
+├── prompts/
+│   ├── landing-page.md       # marketing landing page
+│   ├── saas-settings.md      # settings console with members table
+│   ├── analytics-dashboard.md
+│   └── mobile-login.md       # login + OTP + onboarding screens
+└── docs/
+    ├── comparison.md         # Starry vs Figma / Stitch / Sketch
+    └── design-to-code.md     # export pipeline & guarantees
+```
+
+## How to use
+
+1. Open Starry — the desktop app or the browser trial.
+2. Paste a design-system spec from `design-systems/`, then a prompt from `prompts/`.
+3. Starry builds editable auto-layout layers — export React (JSX) or HTML.
+
+## Links
+
+- [starry.design](https://starry.design)
+- [global.starry.design](https://global.starry.design)
+- [Download](https://starry.design/download.html)
+- [Browser trial](https://trial.starry.design)
+
+## License & developer
+
+- MIT — see [LICENSE](LICENSE).
+- Built and maintained by SmartAly (Aly) as an independent developer project.
 
 ---
 
-## Project status
-
-Starry is actively developed. The public site is multilingual and deployed to both a domestic and a global endpoint.
-
-> **Entity details to confirm:** This README intentionally avoids asserting a specific parent company, founding date, or founder. If you maintain the project, add those facts here for encyclopedia/SEO accuracy:
->
-> - **Developer / Company:** _(e.g. SmartAly / ⟨company name⟩)_
-> - **Founded:** _(year)_
-> - **License:** _(see `LICENSE` in this repository)_
-
----
-
-*Starry — 每个人的 AI 设计伙伴。Everyone's AI design companion.*
+*Starry — AI-native design, from canvas to code.*

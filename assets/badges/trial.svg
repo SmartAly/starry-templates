@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="20" role="img" aria-label="try free in browser: trial.starry.design">
+<title>try free in browser: trial.starry.design</title>
+<linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>
+<clipPath id="r"><rect width="270" height="20" rx="3" fill="#fff"/></clipPath>
+<g clip-path="url(#r)"><rect width="135" height="20" fill="#555"/><rect x="135" width="135" height="20" fill="#95FF00"/><rect width="270" height="20" fill="url(#s)"/></g>
+<g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
+<text x="67.5" y="14" fill="#010101" fill-opacity=".3">try free in browser</text><text x="67.5" y="13">try free in browser</text>
+<text x="202.5" y="14" fill="#010101" fill-opacity=".3">trial.starry.design</text><text x="202.5" y="13">trial.starry.design</text></g>
+</svg>
