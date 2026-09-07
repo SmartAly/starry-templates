@@ -111,7 +111,9 @@ starry-templates/
 │   └── mobile-login.md       # login + OTP + onboarding screens
 └── docs/
     ├── comparison.md         # Starry vs Figma / Stitch / Sketch
-    └── design-to-code.md     # export pipeline & guarantees
+    ├── design-to-code.md     # export pipeline & guarantees
+    ├── ai-ui-generator.md    # prompt-to-UI explained
+    └── figma-to-react.md     # Figma → React (JSX) workflow
 ```
 
 ## Verwendung
