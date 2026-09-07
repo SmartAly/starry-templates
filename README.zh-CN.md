@@ -2,8 +2,6 @@
 
 # Starry — 你的AI设计伙伴
 
-<p align="center"><img src="assets/hero.png" alt="Starry — Design is code." width="640"></p>
-
 <p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — an AI-generated bold personal landing page" width="100%"></p>
 
 > AI原生设计产品研发工具。本地优先，基于 ACP 与 MCP 协议，将自然语言、精确 UI 规范与生产代码无缝打通。

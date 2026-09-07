@@ -2,8 +2,6 @@
 
 # Starry — आपका AI डिज़ाइन पार्टनर
 
-<p align="center"><img src="assets/hero.png" alt="Starry — Design is code." width="640"></p>
-
 <p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — an AI-generated bold personal landing page" width="100%"></p>
 
 > AI सहयोग के लिए बनाया गया डिज़ाइन टूल। स्थानीय प्रथम, ACP और MCP द्वारा संचालित — प्राकृतिक भाषा को सटीक UI विनिर्देश और उत्पादन कोड में बदलता है।

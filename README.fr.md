@@ -2,8 +2,6 @@
 
 # Starry — Ton partenaire de design IA
 
-<p align="center"><img src="assets/hero.png" alt="Starry — Design is code." width="640"></p>
-
 <p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — an AI-generated bold personal landing page" width="100%"></p>
 
 > L'outil de design conçu pour la collaboration IA. Local d'abord, propulsé par ACP et MCP — transforme le langage naturel en spécifications UI précises et en code de production.
