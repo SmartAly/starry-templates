@@ -2,7 +2,7 @@
 
 # Starry — 당신의AI 디자인 파트너
 
-<p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — an AI-generated bold personal landing page" width="100%"></p>
+<p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — AI repairing a lost image node in a Y2K portfolio design" width="100%"></p>
 
 > AI 협업을 위해 태어난 디자인 도구. 로컬 우선, ACP 및 MCP를 통해 자연어를 정밀한 UI 사양과 프로덕션 코드로 전환합니다.
 

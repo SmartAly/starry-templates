@@ -2,7 +2,7 @@
 
 # Starry — Твой ИИ-партнёр по дизайну
 
-<p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — an AI-generated bold personal landing page" width="100%"></p>
+<p align="center"><img src="assets/cover-editor.jpg" alt="Starry canvas — AI repairing a lost image node in a Y2K portfolio design" width="100%"></p>
 
 > Инструмент для дизайна, созданный для работы с ИИ. Локально в первую очередь, на базе ACP и MCP — превращает естественный язык в точные UI-спецификации и production-код.
 
